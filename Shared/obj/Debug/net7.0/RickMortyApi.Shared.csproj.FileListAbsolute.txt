@@ -1,0 +1,11 @@
+D:\RickMortyQuizz\RickMortyApi\Shared\bin\Debug\net7.0\RickMortyApi.Shared.deps.json
+D:\RickMortyQuizz\RickMortyApi\Shared\bin\Debug\net7.0\RickMortyApi.Shared.dll
+D:\RickMortyQuizz\RickMortyApi\Shared\bin\Debug\net7.0\RickMortyApi.Shared.pdb
+D:\RickMortyQuizz\RickMortyApi\Shared\obj\Debug\net7.0\RickMortyApi.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\RickMortyQuizz\RickMortyApi\Shared\obj\Debug\net7.0\RickMortyApi.Shared.AssemblyInfoInputs.cache
+D:\RickMortyQuizz\RickMortyApi\Shared\obj\Debug\net7.0\RickMortyApi.Shared.AssemblyInfo.cs
+D:\RickMortyQuizz\RickMortyApi\Shared\obj\Debug\net7.0\RickMortyApi.Shared.csproj.CoreCompileInputs.cache
+D:\RickMortyQuizz\RickMortyApi\Shared\obj\Debug\net7.0\RickMortyApi.Shared.dll
+D:\RickMortyQuizz\RickMortyApi\Shared\obj\Debug\net7.0\refint\RickMortyApi.Shared.dll
+D:\RickMortyQuizz\RickMortyApi\Shared\obj\Debug\net7.0\RickMortyApi.Shared.pdb
+D:\RickMortyQuizz\RickMortyApi\Shared\obj\Debug\net7.0\ref\RickMortyApi.Shared.dll

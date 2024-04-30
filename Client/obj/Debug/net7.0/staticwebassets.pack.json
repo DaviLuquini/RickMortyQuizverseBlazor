@@ -1,0 +1,57 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\RickMortyQuizz\\RickMortyApi\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "D:\\RickMortyQuizz\\RickMortyApi\\Client\\obj\\Debug\\net7.0\\build-gz\\WFHbValE.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "D:\\RickMortyQuizz\\RickMortyApi\\Client\\wwwroot\\CharactersPage.html",
+      "PackagePath": "staticwebassets\\CharactersPage.html"
+    },
+    {
+      "Id": "D:\\RickMortyQuizz\\RickMortyApi\\Client\\wwwroot\\LandingPage.html",
+      "PackagePath": "staticwebassets\\LandingPage.html"
+    },
+    {
+      "Id": "D:\\RickMortyQuizz\\RickMortyApi\\Client\\wwwroot\\css\\Assets\\quizverseLogo.png",
+      "PackagePath": "staticwebassets\\css\\Assets\\quizverseLogo.png"
+    },
+    {
+      "Id": "D:\\RickMortyQuizz\\RickMortyApi\\Client\\wwwroot\\css\\Assets\\rickMortyTitle.png",
+      "PackagePath": "staticwebassets\\css\\Assets\\rickMortyTitle.png"
+    },
+    {
+      "Id": "D:\\RickMortyQuizz\\RickMortyApi\\Client\\wwwroot\\css\\Assets\\rickMortyWallpaper1.png",
+      "PackagePath": "staticwebassets\\css\\Assets\\rickMortyWallpaper1.png"
+    },
+    {
+      "Id": "D:\\RickMortyQuizz\\RickMortyApi\\Client\\wwwroot\\css\\CharactersPage.css",
+      "PackagePath": "staticwebassets\\css\\CharactersPage.css"
+    },
+    {
+      "Id": "D:\\RickMortyQuizz\\RickMortyApi\\Client\\wwwroot\\css\\LandingPage.css",
+      "PackagePath": "staticwebassets\\css\\LandingPage.css"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.RickMortyApi.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.RickMortyApi.Client.props",
+      "PackagePath": "build\\RickMortyApi.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.RickMortyApi.Client.props",
+      "PackagePath": "buildMultiTargeting\\RickMortyApi.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.RickMortyApi.Client.props",
+      "PackagePath": "buildTransitive\\RickMortyApi.Client.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

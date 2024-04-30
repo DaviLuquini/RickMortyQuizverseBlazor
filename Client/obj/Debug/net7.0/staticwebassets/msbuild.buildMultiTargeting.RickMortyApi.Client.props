@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\RickMortyApi.Client.props" />
+</Project>
