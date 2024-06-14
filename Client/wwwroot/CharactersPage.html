@@ -22,6 +22,22 @@
             <a class="dismiss">🗙</a>
         </div>
         <script src="_framework/blazor.webassembly.js"></script>
+        <script>
+            window.initializeShowCharactersButton = function () {
+                const intervalId = setInterval(() => {
+                    const button = document.getElementById('showCharactersButton');
+                    console.log("tentando encontrar o botão");
+                    if (button) {
+                        console.log("botão encontrado");
+                        button.addEventListener('click', function () {
+                            console.log("botão clicado");
+                            document.getElementById('charactersContainer').style.display = 'flex';
+                        });
+                        clearInterval(intervalId); 
+                    }
+                }, 100); 
+            };
+        </script>
     </div>
 </body>
 

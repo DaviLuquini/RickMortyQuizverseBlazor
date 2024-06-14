@@ -1,34 +1,33 @@
-﻿@*@page "/"*@
+﻿@page "/"
+@using Microsoft.JSInterop
 @using RickMortyApi.Shared.Models
 @using System.Collections.Generic
 @using System.Net.Http
 @using Newtonsoft.Json
 @using System.IO
 @inject HttpClient client
+@inject IJSRuntime JS
 
-<h1>Rick & Morty Characters</h1>
-
+<h1 id="title"><strong>Rick & Morty Characters</strong></h1>
 
 @if (characters is null)
-{
-    <p>@return1</p>
-    <button type="button" class="btn btn-danger">Botão de Teste</button>
-}
-
-else if (characters.Results.Count == 0)
 {
     <p>No characters found</p>
 }
 
+else if (characters.Results.Count == 0)
+{
+    <p>0 characters returned</p>
+}
 else
 {
-    <div class="row">
+    <button type="button" class="btn btn-danger" id="showCharactersButton">Show characters</button>
+    <div class="row" id="charactersContainer" style="display: none;">
         @foreach (var character in characters.Results)
         {
             <div class="col mt-3">
                 <div class="card">
                     <img src="@character.Image" class="card-img-top" alt="No image">
-
                     <div class="card-body">
                         <p class="card-text"><strong>@character.Name</strong></p>
                         <p class="card-text">@character.Origin.Name</p>
@@ -40,26 +39,29 @@ else
     </div>
 }
 
-
 @code {
     public required Characters characters { get; set; }
-    public string return1 { get; set; } = "oi";
 
-
-    protected override Task OnInitializedAsync()
+    protected override async Task OnInitializedAsync()
     {
-        GetCharacters();
-        return base.OnInitializedAsync();
+        await GetCharacters();
     }
 
-    private async void GetCharacters()
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("initializeShowCharactersButton");
+        }
+    }
+
+    private async Task GetCharacters()
     {
         var response = await client.GetAsync("api/characters/all");
 
         if (response.IsSuccessStatusCode)
         {
             string responseBody = await response.Content.ReadAsStringAsync();
-
             var tempCharacters = JsonConvert.DeserializeObject<Characters>(responseBody);
 
             if (tempCharacters != null)

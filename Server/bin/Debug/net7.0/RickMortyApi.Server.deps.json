@@ -9,6 +9,7 @@
       "RickMortyApi.Server/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebAssembly.Server": "7.0.14",
+          "Microsoft.JSInterop": "7.0.20",
           "Newtonsoft.Json": "13.0.3",
           "RickMortyApi.Client": "1.0.0",
           "RickMortyApi.Shared": "1.0.0"
@@ -59,7 +60,7 @@
           "Microsoft.AspNetCore.Components": "7.0.14",
           "Microsoft.AspNetCore.Components.Forms": "7.0.14",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
-          "Microsoft.JSInterop": "7.0.14",
+          "Microsoft.JSInterop": "7.0.20",
           "System.IO.Pipelines": "7.0.0"
         },
         "runtime": {
@@ -196,17 +197,17 @@
         }
       },
       "Microsoft.Extensions.Primitives/7.0.0": {},
-      "Microsoft.JSInterop/7.0.14": {
+      "Microsoft.JSInterop/7.0.20": {
         "runtime": {
           "lib/net7.0/Microsoft.JSInterop.dll": {
             "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.1423.52316"
+            "fileVersion": "7.0.2024.26907"
           }
         }
       },
       "Microsoft.JSInterop.WebAssembly/7.0.14": {
         "dependencies": {
-          "Microsoft.JSInterop": "7.0.14"
+          "Microsoft.JSInterop": "7.0.20"
         },
         "runtime": {
           "lib/net7.0/Microsoft.JSInterop.WebAssembly.dll": {
@@ -234,6 +235,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebAssembly": "7.0.14",
           "Microsoft.Extensions.Http": "7.0.0",
+          "Microsoft.JSInterop": "7.0.20",
           "Newtonsoft.Json": "13.0.3",
           "RickMortyApi.Shared": "1.0.0"
         },
@@ -242,6 +244,9 @@
         }
       },
       "RickMortyApi.Shared/1.0.0": {
+        "dependencies": {
+          "Microsoft.JSInterop": "7.0.20"
+        },
         "runtime": {
           "RickMortyApi.Shared.dll": {}
         }
@@ -415,12 +420,12 @@
       "path": "microsoft.extensions.primitives/7.0.0",
       "hashPath": "microsoft.extensions.primitives.7.0.0.nupkg.sha512"
     },
-    "Microsoft.JSInterop/7.0.14": {
+    "Microsoft.JSInterop/7.0.20": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5+YxHnaDo5p+o+4FeQAitO/Sehr/hOo9a+psA2PT+hdup0OpKjuLuXTqqlrC96Yl57/Y1N24GeY8x/RrJ+k5MQ==",
-      "path": "microsoft.jsinterop/7.0.14",
-      "hashPath": "microsoft.jsinterop.7.0.14.nupkg.sha512"
+      "sha512": "sha512-ug47NElJo58cnA8+YcZx5+mDScrtnkd+Fgi/pLio76O0WYvAc9qGT4cXEVEqX1YcqwHmLgP1NBol6uzYyUqbAw==",
+      "path": "microsoft.jsinterop/7.0.20",
+      "hashPath": "microsoft.jsinterop.7.0.20.nupkg.sha512"
     },
     "Microsoft.JSInterop.WebAssembly/7.0.14": {
       "type": "package",

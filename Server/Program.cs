@@ -26,7 +26,7 @@ app.UseRouting();
 
 app.MapRazorPages();
 app.MapControllers();
-//app.MapFallbackToFile("CharactersPage.html");
-app.MapFallbackToFile("LandingPage.html");
+app.MapFallbackToFile("CharactersPage.html");
+//app.MapFallbackToFile("LandingPage.html");
 
 app.Run();

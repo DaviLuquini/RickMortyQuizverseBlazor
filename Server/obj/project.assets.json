@@ -425,7 +425,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.JSInterop/7.0.14": {
+      "Microsoft.JSInterop/7.0.20": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.JSInterop.dll": {
@@ -530,6 +530,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebAssembly": "7.0.14",
           "Microsoft.Extensions.Http": "7.0.0",
+          "Microsoft.JSInterop": "7.0.20",
           "Newtonsoft.Json": "13.0.3",
           "RickMortyApi.Shared": "1.0.0"
         },
@@ -543,6 +544,9 @@
       "RickMortyApi.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.JSInterop": "7.0.20"
+        },
         "compile": {
           "bin/placeholder/RickMortyApi.Shared.dll": {}
         },
@@ -1152,10 +1156,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.JSInterop/7.0.14": {
-      "sha512": "5+YxHnaDo5p+o+4FeQAitO/Sehr/hOo9a+psA2PT+hdup0OpKjuLuXTqqlrC96Yl57/Y1N24GeY8x/RrJ+k5MQ==",
+    "Microsoft.JSInterop/7.0.20": {
+      "sha512": "ug47NElJo58cnA8+YcZx5+mDScrtnkd+Fgi/pLio76O0WYvAc9qGT4cXEVEqX1YcqwHmLgP1NBol6uzYyUqbAw==",
       "type": "package",
-      "path": "microsoft.jsinterop/7.0.14",
+      "path": "microsoft.jsinterop/7.0.20",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1163,7 +1167,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net7.0/Microsoft.JSInterop.dll",
         "lib/net7.0/Microsoft.JSInterop.xml",
-        "microsoft.jsinterop.7.0.14.nupkg.sha512",
+        "microsoft.jsinterop.7.0.20.nupkg.sha512",
         "microsoft.jsinterop.nuspec"
       ]
     },
@@ -1355,30 +1359,26 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.AspNetCore.Components.WebAssembly.Server >= 7.0.14",
+      "Microsoft.JSInterop >= 7.0.20",
       "Newtonsoft.Json >= 13.0.3",
       "RickMortyApi.Client >= 1.0.0",
       "RickMortyApi.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ciro\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\davil\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RickMortyQuizz\\RickMortyApi\\Server\\RickMortyApi.Server.csproj",
+      "projectUniqueName": "C:\\CodingProjects\\RickMortyBlazor\\Server\\RickMortyApi.Server.csproj",
       "projectName": "RickMortyApi.Server",
-      "projectPath": "D:\\RickMortyQuizz\\RickMortyApi\\Server\\RickMortyApi.Server.csproj",
-      "packagesPath": "C:\\Users\\Ciro\\.nuget\\packages\\",
-      "outputPath": "D:\\RickMortyQuizz\\RickMortyApi\\Server\\obj\\",
+      "projectPath": "C:\\CodingProjects\\RickMortyBlazor\\Server\\RickMortyApi.Server.csproj",
+      "packagesPath": "C:\\Users\\davil\\.nuget\\packages\\",
+      "outputPath": "C:\\CodingProjects\\RickMortyBlazor\\Server\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Ciro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\davil\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1386,17 +1386,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\RickMortyQuizz\\RickMortyApi\\Client\\RickMortyApi.Client.csproj": {
-              "projectPath": "D:\\RickMortyQuizz\\RickMortyApi\\Client\\RickMortyApi.Client.csproj"
+            "C:\\CodingProjects\\RickMortyBlazor\\Client\\RickMortyApi.Client.csproj": {
+              "projectPath": "C:\\CodingProjects\\RickMortyBlazor\\Client\\RickMortyApi.Client.csproj"
             },
-            "D:\\RickMortyQuizz\\RickMortyApi\\Shared\\RickMortyApi.Shared.csproj": {
-              "projectPath": "D:\\RickMortyQuizz\\RickMortyApi\\Shared\\RickMortyApi.Shared.csproj"
+            "C:\\CodingProjects\\RickMortyBlazor\\Shared\\RickMortyApi.Shared.csproj": {
+              "projectPath": "C:\\CodingProjects\\RickMortyBlazor\\Shared\\RickMortyApi.Shared.csproj"
             }
           }
         }
@@ -1405,6 +1406,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1414,6 +1420,10 @@
           "Microsoft.AspNetCore.Components.WebAssembly.Server": {
             "target": "Package",
             "version": "[7.0.14, )"
+          },
+          "Microsoft.JSInterop": {
+            "target": "Package",
+            "version": "[7.0.20, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",
@@ -1439,7 +1449,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "D:\\Program Files\\dotnet\\sdk\\7.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

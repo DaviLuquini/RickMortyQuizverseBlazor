@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LsoOw8eF+GrjWAz9EX8yKJdppnegsnXgLzuAyRImctOlfRc8u4+xCSVkMQT+cfz11Dy+H+n2L1AVcmO8yaZFkQ==",
+  "dgSpecHash": "CyiF5+LoHT8=",
   "success": true,
-  "projectFilePath": "D:\\RickMortyQuizz\\RickMortyApi\\Shared\\RickMortyApi.Shared.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\CodingProjects\\RickMortyBlazor\\Shared\\RickMortyApi.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\davil\\.nuget\\packages\\microsoft.jsinterop\\7.0.20\\microsoft.jsinterop.7.0.20.nupkg.sha512"
+  ],
   "logs": []
 }
